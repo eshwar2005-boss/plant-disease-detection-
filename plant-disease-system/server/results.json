@@ -1,0 +1,73 @@
+[
+  {
+    "image": "/uploads/1769851462261-683778879.jpg",
+    "detection": {
+      "name": "Powdery Mildew",
+      "severity": "Medium",
+      "details": {
+        "type": "Fungal",
+        "life_cycle": "Overwinters on plant debris and spreads by wind; favors warm days and cool nights.",
+        "estimated_days": "7-14 days (with treatment)",
+        "measures": [
+          "Remove and destroy infected leaves",
+          "Improve air circulation",
+          "Apply fungicide as recommended"
+        ],
+        "pesticides": [
+          {
+            "name": "Copper Fungicide",
+            "image": "/images/pesticide1.svg",
+            "use": "Apply as foliar spray at label rate; repeat every 7–14 days as needed."
+          }
+        ]
+      }
+    },
+    "confidence": "53.7%",
+    "time": 1769851462264
+  },
+  {
+    "image": "/uploads/1769851065507-548512270.jpg",
+    "detection": {
+      "name": "Powdery Mildew",
+      "severity": "Medium"
+    },
+    "confidence": "52.0%",
+    "time": 1769851065508
+  },
+  {
+    "image": "/uploads/1769851043941-940505965.jpg",
+    "detection": {
+      "name": "Powdery Mildew",
+      "severity": "Medium"
+    },
+    "confidence": "95.7%",
+    "time": 1769851043948
+  },
+  {
+    "image": "/uploads/1769851022425-970180458.jpg",
+    "detection": {
+      "name": "Healthy",
+      "severity": "None"
+    },
+    "confidence": "95.8%",
+    "time": 1769851022427
+  },
+  {
+    "image": "/uploads/1769843111215-475597828.jpeg",
+    "detection": {
+      "name": "Healthy",
+      "severity": "None"
+    },
+    "confidence": "79.3%",
+    "time": 1769843111217
+  },
+  {
+    "image": "/uploads/1769833494059-37880545.jpeg",
+    "detection": {
+      "name": "Powdery Mildew",
+      "severity": "Medium"
+    },
+    "confidence": "59.1%",
+    "time": 1769833494065
+  }
+]

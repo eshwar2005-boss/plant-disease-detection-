@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="240" viewBox="0 0 400 240">
+  <rect width="100%" height="100%" fill="#fff"/>
+  <g transform="translate(40,20)">
+    <rect x="0" y="0" width="80" height="160" rx="8" fill="#fff5e6" stroke="#f1c27d"/>
+    <rect x="100" y="0" width="200" height="60" rx="8" fill="#fff1e6"/>
+    <text x="110" y="36" font-size="18" font-family="sans-serif" fill="#b45309">Neem Oil</text>
+    <text x="110" y="56" font-size="12" font-family="sans-serif" fill="#6b4a2e">Organic insecticide and fungicide</text>
+    <circle cx="50" cy="200" r="28" fill="#ffd7b5"/>
+  </g>
+</svg>

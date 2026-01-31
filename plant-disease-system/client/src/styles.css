@@ -1,0 +1,87 @@
+:root{--accent:#2e8b57;--muted:#6b7280}
+*{box-sizing:border-box}
+body{font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;margin:0;color:#0b1220;background:linear-gradient(180deg,#f3fff4 0%,#f7fbf7 60%);background-attachment:fixed;color-scheme:light;-webkit-font-smoothing:antialiased;background-image:radial-gradient(rgba(46,139,87,0.03) 1px, transparent 1px);background-size:40px 40px}
+.app{min-height:100vh;display:flex;flex-direction:column}
+.nav{background:var(--accent);color:white;padding:12px 20px;display:flex;align-items:center;justify-content:space-between}
+.nav-left{display:flex;align-items:center;gap:14px}
+.nav-right{display:flex;align-items:center;gap:12px}
+.brand{font-weight:800;text-decoration:none;color:white}
+.nav-link{color:white;text-decoration:none;margin-left:6px}
+.container{flex:1;padding:24px;max-width:1100px;margin:0 auto}
+.footer{text-align:center;padding:12px 0;color:#555}
+.title{font-size:32px;font-weight:900;letter-spacing:1px;text-transform:uppercase}
+.subtitle{color:var(--muted);margin-top:6px}
+.hero{background-image:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.95));padding:40px;border-radius:8px;position:relative;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background-image:url('/images/bg-hero.svg');background-size:cover;background-position:center;opacity:0.95;pointer-events:none}
+.hero-inner{max-width:960px;margin:0 auto;text-align:center;position:relative;z-index:2;display:grid;grid-template-columns:1fr 320px;gap:28px;align-items:center}
+.banner-text{text-align:left;padding:20px}
+.banner-title{font-size:44px;margin:0 0 8px;font-weight:900;letter-spacing:1px;color:#0b2f13}
+.banner-sub{font-weight:600;color:var(--muted);margin:0 0 12px}
+.banner-desc{color:#163a22;margin-bottom:14px}
+.banner-cta{display:flex;gap:12px}
+.btn.large{padding:12px 18px;font-size:16px;border-radius:8px}
+.btn.secondary{background:#f2f8f4;color:var(--accent);box-shadow:none}
+.hero-grid{display:grid;grid-template-columns:repeat(1,1fr);gap:18px;margin-top:18px;list-style:none;padding:0}
+.hero-grid img{display:block;width:100%;height:220px;object-fit:cover;border-radius:12px;box-shadow:0 10px 28px rgba(0,0,0,0.06)}
+.leaf{position:absolute;z-index:1;pointer-events:none;opacity:0.9}
+.leaf1{left:16px;top:8px;width:160px;height:auto;transform:rotate(-12deg)}
+.leaf2{right:36px;top:18px;width:140px;height:auto;transform:rotate(8deg)}
+.leaf3{left:32px;bottom:14px;width:100px;height:auto;transform:rotate(10deg)}
+@media (max-width:880px){.hero-inner{grid-template-columns:1fr;}.banner-title{font-size:28px;text-align:center}.banner-text{text-align:center}.hero-grid img{height:140px}}
+.note{margin-top:12px;color:#333}
+
+/* Card-style lift and subtle shadow for better UI */
+.card-like, .disease-card, .result-item, .pesticide-card, .helper-card, .result-box{background:linear-gradient(white,#fbfffb);border-radius:8px;box-shadow:0 8px 24px rgba(16,24,32,0.04);transition:transform .15s ease,box-shadow .15s ease}
+.card-like:hover, .disease-card:hover, .result-item:hover, .pesticide-card:hover, .helper-card:hover, .result-box:hover{transform:translateY(-6px);box-shadow:0 18px 48px rgba(16,24,32,0.12)}
+
+.gallery-page h2{margin-top:0}
+
+/* Nav and footer polish */
+.nav{backdrop-filter: blur(6px);box-shadow:0 2px 8px rgba(0,0,0,0.06)}
+a.nav-link:hover{opacity:0.95;text-decoration:underline}
+.footer{background:linear-gradient(90deg,rgba(255,255,255,0.02),transparent);padding:18px 0;margin-top:24px}
+.samples .grid{display:flex;gap:8px;flex-wrap:wrap}
+.samples img{width:150px;height:110px;object-fit:cover;border-radius:6px}
+.upload{margin-top:16px}
+.btn{background:var(--accent);color:white;border:none;padding:8px 12px;border-radius:6px;cursor:pointer}
+.camera{margin-top:16px}
+.video{width:320px;height:240px;background:#000;border-radius:6px}
+.preview{margin-top:16px}
+.preview-box img{width:200px;height:auto;border-radius:8px}
+.result-box{margin-top:8px;background:white;padding:12px;border-radius:6px;box-shadow:0 2px 6px rgba(0,0,0,0.04)}
+.results-list{display:flex;flex-direction:column;gap:12px}
+.result-item{display:flex;gap:12px;align-items:center;background:white;padding:12px;border-radius:8px}
+.result-thumb img{width:120px;height:88px;object-fit:cover;border-radius:6px}
+.disease-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.disease-card{background:white;padding:16px;border-radius:8px}
+.pesticide-section{margin-top:12px}
+.pesticide-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-top:8px}
+.pesticide-card{display:flex;gap:10px;align-items:center;background:#fff;padding:10px;border-radius:8px;border:1px solid #eef3ea}
+.pesticide-card img{width:86px;height:56px;object-fit:cover;border-radius:6px}
+.pesticide-meta{flex:1}
+.pesticide-info{margin-top:18px;background:#fff;padding:12px;border-radius:8px}
+.results-list h4, .pesticide-section h4{margin:12px 0 6px}
+.life-cycle p{margin:0 0 8px}
+.measures ul{margin:6px 0 0 18px}
+.recommended .pesticide-grid{margin-top:6px}
+.helper-form{display:flex;flex-direction:column;gap:12px}
+.helper-form input{padding:10px;border-radius:8px;border:1px solid #e6ecdf}
+.helper-form .form-row{display:flex;gap:12px}
+.helper-form .form-row input{flex:1}
+.form-actions{display:flex;gap:10px;align-items:center}
+.form-error{color:#b45309;background:#fff4e6;padding:8px;border-radius:6px}
+.contact-grid{display:grid;grid-template-columns:360px 1fr;gap:18px;align-items:start}
+@media (max-width:880px){.contact-grid{grid-template-columns:1fr}}
+.helpers-area h3{margin-top:0}
+.helpers-list{display:flex;flex-direction:column;gap:10px;margin-top:8px}
+.helper-card{display:flex;justify-content:space-between;align-items:center;padding:12px;border-radius:10px}
+.helper-left{display:flex;gap:12px;align-items:center}
+.avatar{width:56px;height:56px;border-radius:8px;background:linear-gradient(135deg,#eaf9ef,#d9f0e0);display:flex;align-items:center;justify-content:center;font-weight:700;color:#1b4b2c}
+.helper-actions{display:flex;gap:8px;align-items:center}
+.helper-btn img{width:18px;height:18px;display:block}
+.btn.small{padding:6px 8px;font-size:13px}
+.btn.secondary{background:#f2f8f4;color:var(--accent)}
+.btn.danger{background:#f97373}
+.empty{color:var(--muted);padding:12px;background:#fffef9;border-radius:8px}
+
+@media (max-width:640px){.hero-grid img{height:120px}.video{width:100%;height:auto}}
