@@ -1,9 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="480" viewBox="0 0 800 480">
-  <rect width="100%" height="100%" fill="#f2fff2"/>
-  <g transform="translate(200,60)">
-    <path d="M100 200 C90 120 130 80 100 10" stroke="#2e8b57" stroke-width="14" fill="none" stroke-linecap="round"/>
-    <ellipse cx="140" cy="90" rx="70" ry="38" fill="#9ee1b8" transform="rotate(-20 140 90)"/>
-    <ellipse cx="80" cy="130" rx="48" ry="24" fill="#67b86a" transform="rotate(12 80 130)"/>
-    <ellipse cx="140" cy="140" rx="64" ry="34" fill="#4aa96b" transform="rotate(-6 140 140)"/>
-  </g>
+  <defs>
+    <linearGradient id="leafGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4CAF50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2E7D32;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="#f0f7f0"/>
+  <!-- Stem -->
+  <line x1="400" y1="380" x2="400" y2="80" stroke="#6D4C41" stroke-width="8"/>
+  <!-- Left leaf with spots (disease) -->
+  <ellipse cx="320" cy="180" rx="90" ry="120" fill="url(#leafGrad1)" transform="rotate(-30 320 180)"/>
+  <!-- Disease spots on left leaf -->
+  <circle cx="300" cy="140" r="12" fill="#FF6F00" opacity="0.8"/>
+  <circle cx="340" cy="160" r="8" fill="#FFB300" opacity="0.7"/>
+  <circle cx="310" cy="200" r="10" fill="#FF6F00" opacity="0.8"/>
+  <!-- Right leaf healthy -->
+  <ellipse cx="480" cy="200" rx="95" ry="125" fill="#81C784" transform="rotate(35 480 200)"/>
+  <!-- Bottom leaf with brown spots -->
+  <ellipse cx="400" cy="320" rx="85" ry="100" fill="#7CB342" transform="rotate(0 400 320)"/>
+  <circle cx="380" cy="300" r="9" fill="#795548" opacity="0.7"/>
+  <circle cx="420" cy="330" r="7" fill="#A1887F" opacity="0.6"/>
 </svg>

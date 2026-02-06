@@ -12,11 +12,7 @@ export default function Home(){
         <div className="banner-text">
           <h1 className="banner-title">WELCOME TO PLANT DISEASE SYSTEM</h1>
           <p className="banner-sub">A Plant Disease Detection Website</p>
-          <p className="banner-desc">Upload a leaf image or capture with your camera to get a quick diagnosis and guidance.</p>
-          <div className="banner-cta">
-            <a className="btn large" href="/gallery">Start Detection</a>
-            <a className="btn secondary" href="/disease">View Diseases</a>
-          </div>
+          <p className="banner-desc">Plant diseases — fungal, bacterial, and viral — threaten crop health and yields worldwide. Early detection and the right management (cultural control, sanitation, or targeted treatments) help prevent spread; this site provides a quick assessment, life-cycle information, and practical control recommendations to guide growers.</p>
         </div>
 
         <div className="hero-grid">

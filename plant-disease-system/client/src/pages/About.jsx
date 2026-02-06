@@ -11,7 +11,7 @@ export default function About(){
       <ol>
         <li>Go to <strong>Upload / Detection</strong>, and either choose an image from your device or start the camera and take a photo.</li>
         <li>Press <strong>Upload & Detect</strong> to send the image to the server — the app will return the detected disease (demo) and confidence score.</li>
-        <li>Visit <strong>Results</strong> to view stored detection history and review past images and diagnoses.</li>
+        <li>View stored detection history and review past images and diagnoses on the <strong>Upload / Detection</strong> page.</li>
         <li>See <strong>Disease Info</strong> for disease descriptions and recommended pesticide treatments.</li>
       </ol>
 
