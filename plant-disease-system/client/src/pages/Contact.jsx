@@ -88,9 +88,10 @@ export default function Contact(){
           <div className="developer-info">
             <div className="developer-card">
               <h3>👨‍💻 Developer</h3>
-              <p><strong>Name:</strong> K. Santhoshini Reddy</p>
-              <p><strong>Email:</strong> <a href="mailto:santhoshinireddy320@email.com">santhoshinireddy320@email.com</a></p>
+              <p><strong>Name:</strong> B jogeshwar</p>
+              <p><strong>Email:</strong> <a href="mailto:bandaru@gmail.com">bandaru@gmail.com</a></p>
               <p><strong>Phone:</strong> <a href="tel:+919876543219">+91 9876543219</a></p>
+              <p><strong>Assistant Developer:</strong> santhoshini</p>
               <p><strong>Location:</strong> India</p>
             </div>
 

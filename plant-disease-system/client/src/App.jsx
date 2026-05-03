@@ -1,5 +1,7 @@
 import React from 'react'
-import { Routes, Route, Link } from 'react-router-dom'
+import { Routes, Route, Link, useLocation } from 'react-router-dom'
+import LandingPage from './pages/LandingPage'
+import Dashboard from './pages/Dashboard'
 import Home from './pages/Home'
 import Gallery from './pages/Gallery'
 import DiseaseInfo from './pages/DiseaseInfo'
@@ -8,24 +10,32 @@ import Contact from './pages/Contact'
 import Analytics from './pages/Analytics'
 
 export default function App() {
+  const location = useLocation()
+  const hideNav = location.pathname === '/landing' || location.pathname === '/dashboard'
+
   return (
     <div className="app">
-      <nav className="nav">
-        <div className="nav-left">
-          <Link to="/" className="brand">🌱 PLANT DISEASE SYSTEM</Link>
-          <Link to="/" className="nav-link">Home</Link>
-          <Link to="/gallery" className="nav-link">Upload / Detection</Link>
-          <Link to="/disease" className="nav-link">Disease Info</Link>
-          <Link to="/analytics" className="nav-link">📊 Analytics</Link>
-        </div>
-        <div className="nav-right">
-          <Link to="/about" className="nav-link">About</Link>
-          <Link to="/contact" className="nav-link">Contact</Link>
-        </div>
-      </nav>
+      {!hideNav && (
+        <nav className="nav">
+          <div className="nav-left">
+            <Link to="/" className="brand">🌱 PLANT DISEASE SYSTEM</Link>
+            <Link to="/landing" className="nav-link">🚀 Login</Link>
+            <Link to="/" className="nav-link">Home</Link>
+            <Link to="/gallery" className="nav-link">Upload / Detection</Link>
+            <Link to="/disease" className="nav-link">Disease Info</Link>
+            <Link to="/analytics" className="nav-link">📊 Analytics</Link>
+          </div>
+          <div className="nav-right">
+            <Link to="/about" className="nav-link">About</Link>
+            <Link to="/contact" className="nav-link">Contact</Link>
+          </div>
+        </nav>
+      )}
 
-      <main className="container">
+      <main className={hideNav ? 'container full-bleed' : 'container'}>
         <Routes>
+          <Route path="/landing" element={<LandingPage />} />
+          <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/" element={<Home />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/disease" element={<DiseaseInfo />} />
@@ -35,7 +45,7 @@ export default function App() {
         </Routes>
       </main>
 
-      <footer className="footer">© 2026 Plant Disease System | Powered by SQLite, Node-Cache & TensorFlow</footer>
+      {!hideNav && <footer className="footer">© 2026 Plant Disease System | Powered by SQLite, Node-Cache & TensorFlow</footer>}
     </div>
   )
 }
